@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Combustível Restante</string>
+    <string name="tvConsumoMedioAutomovel">Insira o consumo médio do automóvel</string>
+    <string name="etConsumoMedioAutomovel">km/l</string>
+    <string name="tvQuantidadeDeLitrosNoTanque">Insira a quantidade de Combustível restante</string>
+    <string name="etQuantidadeDeLitrosNoTanque">Litros restantes</string>
+    <string name="btnCalcular">Calcular</string>
+</resources>

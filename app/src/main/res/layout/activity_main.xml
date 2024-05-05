@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3E996"
+    android:backgroundTint="#E4FFF6CA"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvConsumoMedioAutomovel"
+        android:layout_width="209dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/tvConsumoMedioAutomovel"
+        android:textAlignment="center"
+        android:textColor="#3D4CD5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etConsumoMedioAutomovel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvQuantidadeDeLitrosNoTanque"
+        android:layout_width="209dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="14dp"
+        android:text="@string/tvQuantidadeDeLitrosNoTanque"
+        android:textAlignment="center"
+        android:textColor="#3D4CD5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/etQuantidadeDeLitrosNoTanque"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etConsumoMedioAutomovel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="75dp"
+        android:ems="10"
+        android:hint="@string/etConsumoMedioAutomovel"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/tvQuantidadeDeLitrosNoTanque"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etQuantidadeDeLitrosNoTanque"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="@string/etQuantidadeDeLitrosNoTanque"
+        android:importantForAutofill="no"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMetrosRestantesQuePodemSerPercorridos"
+        android:layout_width="209dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="214dp"
+        android:textColor="#3D4CD5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalcular"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@color/btnAzul"
+        android:backgroundTint="@color/btnAzul"
+        android:text="@string/btnCalcular"
+        android:textColorLink="@color/btnAzul"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvMetrosRestantesQuePodemSerPercorridos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
